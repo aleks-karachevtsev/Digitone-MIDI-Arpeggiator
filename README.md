@@ -13,4 +13,4 @@ The existing Digitone ARP page controls the MIDI arpeggiator. The mod supports t
 
 `DigiArp-MIDI-DA27-0.9-dev11.elemod` requires Elekloader core 4.1.1 and seq-events 0.1, plus a verified stock Digitone OS 1.44 image when constructing a firmware update. Do not send the `.elemod` directly to the hardware as an OS SysEx image. Proprietary Elektron firmware and dependency binaries are not included.
 
-License: GPL-2.0-or-later. See `LICENSE`. This beta is prepared for review; it has not been published to GitHub or submitted to a mod catalog.
+License: GPL-2.0-or-later. See `LICENSE`. This is an experimental beta release. See GitHub Releases for the installable module and KNOWN_ISSUES.md for its limitations.
