@@ -1,0 +1,146 @@
+{
+  "id": "digiarp-midi",
+  "version": "0.9-dev11",
+  "title": "DigiArp MIDI",
+  "category": "Sequencer",
+  "author": "DigiArp project",
+  "license": "GPL-2.0-or-later",
+  "description": "Experimental MIDI arpeggiator for Digitone MK1 OS 1.44; hardware verification required",
+  "device": "digitone-mk1",
+  "os": "1.44",
+  "sources": [
+    "firmware/trig-hook.s",
+    "firmware/worker.c",
+    "src/digiarp.c",
+    "firmware/live.s",
+    "firmware/live.c",
+    "firmware/fast.s",
+    "firmware/fast.c"
+  ],
+  "requires": [
+    "core"
+  ],
+  "subscribe": [
+    {
+      "event": "ev_render_params",
+      "fn": "live_block",
+      "order": 50
+    },
+    {
+      "event": "ev_tick",
+      "fn": "fast_start",
+      "order": 70
+    },
+    {
+      "event": "ev_tick",
+      "fn": "ui_arp_redraw",
+      "order": 80
+    },
+    {
+      "event": "ev_key",
+      "fn": "panel_arp_shortcut",
+      "order": 40
+    },
+    {
+      "event": "ev_key_leds",
+      "fn": "panel_arp_leds",
+      "order": 40
+    }
+  ],
+  "sites": [
+    {
+      "addr": "0x400f47b8",
+      "stock": "4a8e6d000204",
+      "op": "jmp",
+      "target": "dn144_trig_hook"
+    },
+    {
+      "addr": "0x400f4c7e",
+      "stock": "1039419b14ec",
+      "op": "jsr",
+      "target": "dn144_worker_tail"
+    },
+    {
+      "addr": "0x400513d4",
+      "stock": "4eb94001dcf2",
+      "op": "jsr",
+      "target": "arp_sound"
+    },
+    {
+      "addr": "0x40051960",
+      "stock": "4eb94001dcf2",
+      "op": "jsr",
+      "target": "arp_sound"
+    },
+    {
+      "addr": "0x40051f60",
+      "stock": "4eb94001dcf2",
+      "op": "jsr",
+      "target": "arp_sound"
+    },
+    {
+      "addr": "0x4005203c",
+      "stock": "4eb94001dcf2",
+      "op": "jsr",
+      "target": "arp_sound"
+    },
+    {
+      "addr": "0x400523b6",
+      "stock": "4eb94001dcf2",
+      "op": "jsr",
+      "target": "arp_sound"
+    },
+    {
+      "addr": "0x4003b198",
+      "stock": "4fefffe87007",
+      "op": "jmp",
+      "target": "live_down"
+    },
+    {
+      "addr": "0x4003b26e",
+      "stock": "598f2f037207",
+      "op": "jmp",
+      "target": "live_up"
+    },
+    {
+      "addr": "0x4003fc3e",
+      "stock": "6600f8e0",
+      "op": "bytes",
+      "new": "4e714e71",
+      "kind": "code"
+    },
+    {
+      "addr": "0x400519ee",
+      "stock": "4eb9400319a2",
+      "op": "jsr",
+      "target": "panel_set_mode"
+    },
+    {
+      "addr": "0x40051dfe",
+      "stock": "42aa02bc42aa02c4",
+      "op": "jmp",
+      "target": "live_labels"
+    }
+  ],
+  "contribute": [
+    {
+      "to": "core_projdata",
+      "order": 75,
+      "data": "00000000",
+      "relocs": [
+        [
+          0,
+          "abs32",
+          "sym:digiarp_saved",
+          0
+        ]
+      ]
+    }
+  ],
+  "resources": {
+    "core": "4.1",
+    "names": [
+      "projdata:DARP"
+    ]
+  }
+}

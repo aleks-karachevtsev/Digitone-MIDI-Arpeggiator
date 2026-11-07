@@ -1,0 +1,4 @@
+out/
+*.syx
+*.bin
+__pycache__/

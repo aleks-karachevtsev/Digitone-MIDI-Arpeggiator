@@ -1,0 +1,17 @@
+DA27 (actual tests)
+PASS ColdFire SDK build: digiarp-midi-0.9-dev11.elemod, .run 7098 B, .bss 22884 B, 12 sites.
+PASS Elekloader lint: ok true, no conflicts/problems with core 4.1.1 and seq-events 0.1.
+PASS Elekloader patch/verification: stock OS 1.44 SHA256 d4f200d04484333d82822db7744e6484d0def8f2db8ddf55ee2b780cc13c9659, linked image DA27 SHA256 cc18651dc2e663d2364b47f603ae4e6864e5c19fc12189157f60dda33d8ef307, stock sections verified.
+PASS host test_regression26: lengths 1..16, disabled step keeps rhythmic slot, signed offsets, length change while playing, exact note 60 for one held key in 8 engine modes, all single-note removals from chords 1..8, balanced offs.
+PASS host test_steps and test_one: masks/offsets and all modes.
+PASS full emulator regression27: MIDI On/Off pitches for lengths 1,2,3,4,7,8,15,16, complete repeated pattern for each; all On matched Off; C-E-G release E continued C/G; 24 FUNC+NOTE presses across raw mode 0..7 all flipped enabled once while page open and stopped. No emulator halt.
+PASS full emulator tracks27: MIDI A-D each transmitted Note On 60 and matched Note Off, no halt. PASS synth27: MIDI D edits did not change T4 full synth pattern.
+PASS virtual card card_menu27/load_card27: saved project, flushed card, fresh emulator session, loaded project; MIDI A enabled returned 01, graphical length raw 06 (display 7), step mask ff fd and offsets 05 00 f9 restored. Core import/restore hooks were observed; no emulator halt.
+PASS full emulator verify27: MIDI A LED palette 31 / RGB 255,180,0 when on, palette 2 / RGB 8,8,8 off; MIDI B independent, T4 stock. At LEN raw20/64/110 measured median MIDI On→Off durations 27.34/88.26/149.33 ms, pitches all 60 and balanced.
+PASS full emulator toggle_mid27: while key held, shortcut OFF emitted the needed Note Off and no subsequent On; shortcut ON resumed, MODE05 preserved and total On/Off balanced, no halt.
+PASS host test_panel27: MODE preserved while disabled, physical key owner survives track switch, sequencer trig rejected at STOP, shortcut from MODE OFF flips state and initializes mode.
+PASS full emulator stress_real27: 300 BPM recorded trigs on MIDI A, 622 MIDI On and 622 Off over 5 simulated seconds; mean onset interval 8.336 ms versus 8.333 expected, max 12.4 ms; STOP emitted no stuck note, no emulator halt.
+HARDWARE STATUS (user report): DA27 was installed and tested on a physical Digitone. No exact DA27 MIDI note trace or comprehensive pass/fail results were supplied here; the reported single-note pitch issue remains unresolved. The emulator and host results above are independently recorded.
+
+PACKAGE REBUILD (executed): rebuilt the included source in the Elekloader SDK with the installed GNU m68k toolchain and verified stock OS 1.44. Output SHA-256 exactly matches included DA27 module: b82506a6adb3c39545eb6daa731e5e28d09e6c61a07dcedb312a65066b84ff58. Rebuilt module Elekloader lint returned ok=true, problems=[]. This validates source/binary correspondence and compatibility; no DA28 binary or new physical test was made.
+PACKAGE HOST TEST (executed): compiled bundled `tests/test_regression26.c` against bundled `src/digiarp.c` and ran it successfully; output confirmed pattern lengths 1–16, rests, offsets, single held key in all eight engine modes and chord releases. Python tests passed syntax compilation after paths were adapted for repository layout; they were not rerun from this packaged path.
