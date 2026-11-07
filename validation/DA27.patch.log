@@ -1,0 +1,10 @@
+stock: Digitone mk1 OS 1.44 (d4f200d04484333d82822db7744e6484d0def8f2db8ddf55ee2b780cc13c9659)
+mod core 4.1.1               88 sites  (file sha256 2b474537c4b9772e)
+mod seq-events 0.1           15 sites  (file sha256 efa52d4d8090724e)
+mod digiarp-midi 0.9-dev11   12 sites  (file sha256 b82506a6adb3c395)
+the mods combine: no overlaps, stock bytes as expected, code sites whole instructions
+linked core 4.1.1, digiarp-midi 0.9-dev11, seq-events 0.1: RAM 0x43ec0000-0x43ec9afc (1271044 bytes spare), .fast to 0x00000000 (0 spare), blob 15152 bytes
+packed the main OS: 2751456 -> 1078104 bytes (4.1 s)
+verified: sections 2, 4, 5, 6, 7, 8, byte for byte; the main OS depacks to the patched image in place (min gap 422768 bytes); flash ends 0x1cba50 (1787312 bytes spare)
+WROTE lab/DA27.syx
+  sha256 cc18651dc2e663d2364b47f603ae4e6864e5c19fc12189157f60dda33d8ef307, version DA27, 1721632 bytes

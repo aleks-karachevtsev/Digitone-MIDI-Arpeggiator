@@ -1,0 +1,5 @@
+BOOT /workspace/scratch/2f93b9a11c14/emu-env/device/build/dn1-cc18651dc2/snapshots/DA27/gui.snap
+TRACK 0 MODE 05 ON ['903c64'] OFF ['803c00'] HALT None
+TRACK 1 MODE 05 ON ['903c64'] OFF ['803c00'] HALT None
+TRACK 2 MODE 05 ON ['903c64'] OFF ['803c00'] HALT None
+TRACK 3 MODE 05 ON ['903c64'] OFF ['803c00'] HALT None

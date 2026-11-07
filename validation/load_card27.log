@@ -1,0 +1,35 @@
+  [n=0] TASK_CREATE site 0x4008d412 -> entry=0x4008cdc2 prio=0 tcb=0x41370608 stack=0x4137065c size=0x4000
+  [n=0] TASK_CREATE site 0x4008cdda -> entry=0x4008cf00 prio=1 tcb=0x4137465c stack=0x413746b0 size=0x4000
+  [n=0] TASK_CREATE site 0x4000158c -> entry=0x400012e4 prio=9 tcb=0x40526f08 stack=0x40526f5c size=0x1000
+  [n=0] TASK_CREATE site 0x4000304a -> entry=0x40002e6e prio=10 tcb=0x40528628 stack=0x4052867c size=0x800
+  [n=0] TASK_CREATE site 0x40090de2 -> entry=0x40090e56 prio=7 tcb=0x4138094c stack=0x4137c94c size=0x4000
+  [n=0] TASK_CREATE site 0x400f4db2 -> entry=0x400f4052 prio=8 tcb=0x4321f9a0 stack=0x419c60a0 size=0x4000
+  [n=0] TASK_CREATE site 0x4008d814 -> entry=0x4008d58c prio=5 tcb=0x4137c6b4 stack=0x413786b4 size=0x4000
+  [n=0] TASK_CREATE site 0x400eb4b4 -> entry=0x400e9b7e prio=7 tcb=0x419972a8 stack=0x419972fc size=0x8000
+  [n=0] TASK_CREATE site 0x40019476 -> entry=0x40019852 prio=6 tcb=0x4052b668 stack=0x4052bedc size=0x28000
+  [n=0] TASK_CREATE site 0x400a857c -> entry=0x400a89c6 prio=2 tcb=0x41395e1c stack=0x41395e70 size=0x4000
+   TASK entry=0x43ec2e84 prio=1 tcb=0x43ec99d0
+   TASK entry=0x400fab2c prio=5 tcb=0x419cf894
+   TASK entry=0x400fac80 prio=4 tcb=0x419cf820
+   TASK entry=0x400fada6 prio=4 tcb=0x419cf7ac
+BOOT /workspace/scratch/2f93b9a11c14/emu-env/device/build/dn1-cc18651dc2/snapshots/DA27/gui.snap
+initial ['0000', '0000', '0000', '0000']
+ENABLED initial 00000000
+LENGTH initial ['00', '00', '00', '00']
+STEPS ['ffff000000', 'ffff000000', 'ffff000000', 'ffff000000']
+slots ['0000', '0000', '0000', '0000']
+ENABLED slots 00000000
+LENGTH slots ['00', '00', '00', '00']
+STEPS ['ffff000000', 'ffff000000', 'ffff000000', 'ffff000000']
+selected ['0000', '0000', '0000', '0000']
+ENABLED selected 00000000
+LENGTH selected ['00', '00', '00', '00']
+STEPS ['ffff000000', 'ffff000000', 'ffff000000', 'ffff000000']
+HITS [(1697.33, '0x43ec06b4')] HALT None
+confirmed ['0509', '0000', '0000', '0000']
+ENABLED confirmed 01000000
+LENGTH confirmed ['06', '00', '00', '00']
+STEPS ['fffd0500f9', 'ffff000000', 'ffff000000', 'ffff000000']
+HITS [(1697.33, '0x43ec06b4'), (2210.69, '0x43ec2bd2')] HALT None
+CARD WRITES 2782720
+FLUSH aae70e00660a872d

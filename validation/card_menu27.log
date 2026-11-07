@@ -1,0 +1,11 @@
+BOOT /workspace/scratch/2f93b9a11c14/emu-env/device/build/dn1-cc18651dc2/snapshots/DA27/gui.snap
+CARD /workspace/scratch/2f93b9a11c14/emu-env/device/build/dn1-cc18651dc2/plusdrive.img INITIAL ec0af8bb97e83879
+BEFORE SAVE 05090000 ec0af8bb97e83879 HITS []
+SAVE SHORTCUT ec0af8bb97e83879 HITS [] HALT None
+YES ec0af8bb97e83879 HITS [] HALT None
+SAVE AS ec0af8bb97e83879 HITS []
+SLOT ec0af8bb97e83879 HITS []
+EMPTY ec0af8bb97e83879 HITS []
+CREATED ec0af8bb97e83879 HITS [(8442.67, '0x43ec067c'), (8442.67, '0x43ec067c'), (8780.43, '0x43ec067c')]
+CARD WRITES 5565440 CARD PATH /workspace/scratch/2f93b9a11c14/emu-env/device/build/dn1-cc18651dc2/plusdrive.img
+FLUSHED b300c1ce5a411392

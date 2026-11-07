@@ -1,0 +1,27 @@
+  [n=0] TASK_CREATE site 0x4008d412 -> entry=0x4008cdc2 prio=0 tcb=0x41370608 stack=0x4137065c size=0x4000
+  [n=0] TASK_CREATE site 0x4008cdda -> entry=0x4008cf00 prio=1 tcb=0x4137465c stack=0x413746b0 size=0x4000
+  [n=0] TASK_CREATE site 0x4000158c -> entry=0x400012e4 prio=9 tcb=0x40526f08 stack=0x40526f5c size=0x1000
+  [n=0] TASK_CREATE site 0x4000304a -> entry=0x40002e6e prio=10 tcb=0x40528628 stack=0x4052867c size=0x800
+  [n=0] TASK_CREATE site 0x40090de2 -> entry=0x40090e56 prio=7 tcb=0x4138094c stack=0x4137c94c size=0x4000
+  [n=0] TASK_CREATE site 0x400f4db2 -> entry=0x400f4052 prio=8 tcb=0x4321f9a0 stack=0x419c60a0 size=0x4000
+  [n=0] TASK_CREATE site 0x4008d814 -> entry=0x4008d58c prio=5 tcb=0x4137c6b4 stack=0x413786b4 size=0x4000
+  [n=0] TASK_CREATE site 0x400eb4b4 -> entry=0x400e9b7e prio=7 tcb=0x419972a8 stack=0x419972fc size=0x8000
+  [n=0] TASK_CREATE site 0x40019476 -> entry=0x40019852 prio=6 tcb=0x4052b668 stack=0x4052bedc size=0x28000
+  [n=0] TASK_CREATE site 0x400a857c -> entry=0x400a89c6 prio=2 tcb=0x41395e1c stack=0x41395e70 size=0x4000
+   TASK entry=0x43ec2e84 prio=1 tcb=0x43ec99d0
+   TASK entry=0x400fab2c prio=5 tcb=0x419cf894
+   TASK entry=0x400fac80 prio=4 tcb=0x419cf820
+   TASK entry=0x400fada6 prio=4 tcb=0x419cf7ac
+BOOT /workspace/scratch/2f93b9a11c14/emu-env/device/build/dn1-cc18651dc2/snapshots/DA27/gui.snap
+A_ON 05 01000000 (31, (255, 180, 0))
+A_OFF 05 00000000 (2, (8, 8, 8))
+A_REON 05 (31, (255, 180, 0))
+B (2, (8, 8, 8)) 01000000
+A_BACK (31, (255, 180, 0))
+SYNTH_T4 3 (2, (8, 8, 8))
+GATE 20 ON [(8478.0, 60), (8653.33, 60), (8827.33, 60), (9004.67, 60), (9176.0, 60), (9351.74, 60), (9523.33, 60)] OFF [(8505.07, 60), (8681.07, 60), (8854.67, 60), (9033.33, 60), (9204.67, 60), (9378.0, 60), (9530.0, 60)] DURATION [27.07, 27.74, 27.34, 28.66, 28.67, 26.26, 6.67]
+MEDIAN 20 27.34
+GATE 64 ON [(9708.0, 60), (9884.0, 60), (10059.74, 60), (10231.33, 60), (10406.0, 60), (10580.0, 60), (10754.67, 60)] OFF [(9795.33, 60), (9973.07, 60), (10148.0, 60), (10321.13, 60), (10494.0, 60), (10672.0, 60), (10758.0, 60)] DURATION [87.33, 89.07, 88.26, 89.8, 88.0, 92.0, 3.33]
+MEDIAN 64 88.26
+GATE 110 ON [(10939.74, 60), (11114.0, 60), (11288.4, 60), (11463.33, 60), (11638.0, 60), (11811.74, 60)] OFF [(11088.67, 60), (11264.0, 60), (11438.67, 60), (11611.33, 60), (11786.67, 60), (11961.07, 60)] DURATION [148.93, 150.0, 150.27, 148.0, 148.67, 149.33]
+MEDIAN 110 149.33

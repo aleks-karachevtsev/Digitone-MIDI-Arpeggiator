@@ -1,0 +1,178 @@
+{
+ "ok": true,
+ "mods": [
+  {
+   "file": "digiarp-midi-0.9-dev11.elemod",
+   "id": "digiarp-midi",
+   "version": "0.9-dev11",
+   "format": 2,
+   "target": "Digitone mk1 1.44",
+   "sites": [
+    "0x400f47b8 +6 code",
+    "0x400f4c7e +6 code",
+    "0x400513d4 +6 code",
+    "0x40051960 +6 code",
+    "0x40051f60 +6 code",
+    "0x4005203c +6 code",
+    "0x400523b6 +6 code",
+    "0x4003b198 +6 code",
+    "0x4003b26e +6 code",
+    "0x4003fc3e +4 code",
+    "0x400519ee +6 code",
+    "0x40051dfe +8 code"
+   ],
+   "requires": [
+    "core"
+   ],
+   "conflicts": [],
+   "names": [
+    "projdata:DARP"
+   ],
+   "license": "GPL-2.0-or-later",
+   "regions": [],
+   "sections": {
+    ".run": 7098,
+    ".bss": 22884
+   },
+   "exports": 47,
+   "imports": [
+    "fw_active_track",
+    "fw_tempo",
+    "fw_timeline",
+    "fw_transport"
+   ],
+   "weak": [],
+   "tables": {},
+   "adds_to": [
+    "core_projdata",
+    "ev_key",
+    "ev_key_leds",
+    "ev_render_params",
+    "ev_tick"
+   ]
+  }
+ ],
+ "problems": [],
+ "core_candidates": [
+  {
+   "mod": "digiarp-midi",
+   "site": "0x400f47b8",
+   "len": 6
+  },
+  {
+   "mod": "digiarp-midi",
+   "site": "0x400f4c7e",
+   "len": 6
+  },
+  {
+   "mod": "digiarp-midi",
+   "site": "0x400513d4",
+   "len": 6
+  },
+  {
+   "mod": "digiarp-midi",
+   "site": "0x40051960",
+   "len": 6
+  },
+  {
+   "mod": "digiarp-midi",
+   "site": "0x40051f60",
+   "len": 6
+  },
+  {
+   "mod": "digiarp-midi",
+   "site": "0x4005203c",
+   "len": 6
+  },
+  {
+   "mod": "digiarp-midi",
+   "site": "0x400523b6",
+   "len": 6
+  },
+  {
+   "mod": "digiarp-midi",
+   "site": "0x4003b198",
+   "len": 6
+  },
+  {
+   "mod": "digiarp-midi",
+   "site": "0x4003b26e",
+   "len": 6
+  },
+  {
+   "mod": "digiarp-midi",
+   "site": "0x4003fc3e",
+   "len": 4
+  },
+  {
+   "mod": "digiarp-midi",
+   "site": "0x400519ee",
+   "len": 6
+  },
+  {
+   "mod": "digiarp-midi",
+   "site": "0x40051dfe",
+   "len": 8
+  }
+ ],
+ "link": {
+  "order": [
+   "core 4.1.1",
+   "digiarp-midi 0.9-dev11",
+   "seq-events 0.1"
+  ],
+  "ram_used": 39676,
+  "ram_size": 1310720,
+  "fast_used": 0,
+  "fast_size": 0,
+  "addresses": {
+   "arp_capture": "0x43ec2346",
+   "arp_restore": "0x43ec2bd2",
+   "arp_settings": "0x43ec40ec",
+   "arp_sound": "0x43ec1f30",
+   "da_clear_track": "0x43ec1670",
+   "da_config": "0x43ec172c",
+   "da_init": "0x43ec15ae",
+   "da_note_off": "0x43ec19c2",
+   "da_note_on": "0x43ec1924",
+   "da_panic": "0x43ec1610",
+   "da_pattern_length": "0x43ec16e4",
+   "da_steps": "0x43ec16ac",
+   "da_tick": "0x43ec1a8a",
+   "da_update_timing": "0x43ec1840",
+   "digiarp_saved": "0x43ec2fc6",
+   "dn144_trig_hook": "0x43ec144c",
+   "dn144_worker_accept": "0x43ec1562",
+   "dn144_worker_poll": "0x43ec1550",
+   "dn144_worker_tail": "0x43ec1484",
+   "fast_active": "0x43ec2f14",
+   "fast_schedule": "0x43ec2f1c",
+   "fast_start": "0x43ec2eba",
+   "fast_wake": "0x43ec2f28",
+   "fast_wake_at": "0x43ec2f56",
+   "fw_arp_led_set": "0x43ec1514",
+   "fw_note_off": "0x43ec14a8",
+   "fw_note_on": "0x43ec14a2",
+   "fw_sem_init": "0x43ec153e",
+   "fw_sem_pend": "0x43ec1544",
+   "fw_sem_post": "0x43ec154a",
+   "fw_task_create": "0x43ec1532",
+   "fw_task_start": "0x43ec1538",
+   "live_block": "0x43ec1fa0",
+   "live_down": "0x43ec14ba",
+   "live_input": "0x43ec2008",
+   "live_labels": "0x43ec151a",
+   "live_poll": "0x43ec23c0",
+   "live_trig": "0x43ec2d80",
+   "live_up": "0x43ec14e4",
+   "midi_channel": "0x43ec14b4",
+   "panel_arp_leds": "0x43ec2220",
+   "panel_arp_shortcut": "0x43ec2282",
+   "panel_labels": "0x43ec22f6",
+   "panel_set_mode": "0x43ec2144",
+   "stock_set_mode": "0x43ec150e",
+   "stock_sound": "0x43ec14ae",
+   "ui_arp_redraw": "0x43ec1f14"
+  }
+ }
+}
